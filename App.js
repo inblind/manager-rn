@@ -6,6 +6,7 @@ import reducers from './src/reducers';
 import firebase from 'firebase';
 import LoginForm from './src/components/LoginForm';
 import ReduxThunk from 'redux-thunk';
+import {Header} from './src/components/common';
 
 class App extends Component{
 
@@ -29,6 +30,7 @@ class App extends Component{
     return(
     <Provider store={store}>
       <View>
+        <Header headerText = 'Manager App'/>
           <LoginForm/>
         </View>
     </Provider>
